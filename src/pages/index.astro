@@ -1,11 +1,83 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import '../styles/global.css';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+
+
+
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>DE LA PIEDRA AL BIT</h1>
+            <p class="tagline">Una línea infinita de trascendencia humana.</p>
+        </div>
+    </section>
+
+    <section class="intro">
+        <p>Creemos que el arte no reside en el soporte, sino en la voluntad de trascender. Bienvenidos a un recorrido por la estética del espíritu.</p>
+    </section>
+
+    <main class="grid-container">
+        
+        <a href="prehistoria.html" class="card">
+            <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1518112166137-859096068224?q=80&w=800');"></div>
+            <div class="card-text">
+                <h3>PREHISTORIA</h3>
+                <span>El primer rastro de la conciencia humana.</span>
+            </div>
+        </a>
+
+        <a href="antiguedad.html" class="card">
+            <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?q=80&w=800');"></div>
+            <div class="card-text">
+                <h3>ANTIGÜEDAD</h3>
+                <span>Monumentos construidos para desafiar al tiempo.</span>
+            </div>
+        </a>
+
+        <a href="clasico.html" class="card">
+            <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1543165796-5426273eaec3?q=80&w=800');"></div>
+            <div class="card-text">
+                <h3>CLÁSICO</h3>
+                <span>La búsqueda de la armonía y la proporción divina.</span>
+            </div>
+        </a>
+
+        <a href="medieval.html" class="card">
+            <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1548777123-e216912df7d8?q=80&w=800');"></div>
+            <div class="card-text">
+                <h3>MEDIEVAL</h3>
+                <span>El triunfo de la luz sobre el muro de piedra.</span>
+            </div>
+        </a>
+
+        <a href="moderna.html" class="card">
+            <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=800');"></div>
+            <div class="card-text">
+                <h3>MODERNA</h3>
+                <span>El despertar del genio y la perspectiva.</span>
+            </div>
+        </a>
+
+        <a href="contemporaneo.html" class="card">
+            <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1633167606207-d840b5070fc2?q=80&w=800');"></div>
+            <div class="card-text">
+                <h3>CONTEMPORÁNEO</h3>
+                <span>Del sueño surrealista a la frontera del bit.</span>
+            </div>
+        </a>
+
+    </main>
+
+    <footer class="footer">
+        <p>A E T E R N A</p>
+        <div class="footer-links">
+            <a href="editorial.html">El Manifiesto</a> | <a href="mailto:contacto@aeterna.art">Contacto</a>
+        </div>
+    </footer>
 </Layout>

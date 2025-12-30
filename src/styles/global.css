@@ -1,0 +1,172 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    color: #1a1a1a;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Tipografías */
+h1, h2, h3, .logo {
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+/* Navegación Chic */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5%;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #b59410; /* Color oro sugerido */
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1554188248-986adbb73be4?q=80&w=1600') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/* Introducción */
+.intro {
+    padding: 5rem 10%;
+    text-align: center;
+}
+
+.intro p {
+    font-size: 1.4rem;
+    font-family: 'Bodoni Moda', serif;
+    font-style: italic;
+    color: #444;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Grilla de Tarjetas */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    padding: 0 5% 5rem;
+}
+
+.card {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image {
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.8s ease;
+}
+
+.card:hover .card-image {
+    transform: scale(1.05);
+}
+
+.card-text {
+    padding: 1.5rem 0;
+}
+
+.card-text h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-text span {
+    font-size: 0.85rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Footer */
+.footer {
+    padding: 4rem 5%;
+    text-align: center;
+    border-top: 1px solid #f0f0f0;
+    background: #fafafa;
+}
+
+.footer p {
+    letter-spacing: 5px;
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    color: #888;
+    text-decoration: none;
+    font-size: 0.8rem;
+    margin: 0 0.5rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .nav-links { display: none; } /* En una web real aquí pondrías un menú hamburguesa */
+    .hero h1 { font-size: 2rem; }
+}
