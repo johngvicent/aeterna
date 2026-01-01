@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="Nueva_muestra_de_degradado_1" data-name="Nueva muestra de degradado 1" x1="2.31" y1="1.59" x2="96.98" y2="97.69" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#bf8000"/>
+      <stop offset=".51" stop-color="#ffc000"/>
+      <stop offset="1" stop-color="#947800"/>
+    </linearGradient>
+    <linearGradient id="Nueva_muestra_de_degradado_1-2" data-name="Nueva muestra de degradado 1" x1="2.3" y1="1.59" x2="96.98" y2="97.69" xlink:href="#Nueva_muestra_de_degradado_1"/>
+    <linearGradient id="Nueva_muestra_de_degradado_1-3" data-name="Nueva muestra de degradado 1" x1="2.31" y1="1.59" x2="96.98" y2="97.69" xlink:href="#Nueva_muestra_de_degradado_1"/>
+  </defs>
+  <circle cx="65.19" cy="34.72" r="3.57" style="fill: #fff;"/>
+  <path d="M50,64.29c7.89,0,14.29-6.4,14.29-14.29s-6.4-14.29-14.29-14.29-14.29,6.4-14.29,14.29,6.4,14.29,14.29,14.29ZM50,40.71c5.13,0,9.28,4.16,9.29,9.29,0,5.13-4.16,9.29-9.29,9.29s-9.29-4.16-9.29-9.29,4.16-9.29,9.29-9.29Z" style="fill: #fff;"/>
+  <path d="M35.71,78.57h28.57c7.89,0,14.29-6.4,14.29-14.29v-28.57c0-7.89-6.4-14.29-14.29-14.29h-28.57c-7.89,0-14.29,6.4-14.29,14.29v28.57c0,7.89,6.4,14.29,14.29,14.29ZM26.43,35.71c0-5.13,4.16-9.28,9.29-9.29h28.57c5.13,0,9.28,4.16,9.29,9.29v28.57c0,5.13-4.16,9.28-9.29,9.29h-28.57c-5.13,0-9.28-4.16-9.29-9.29v-28.57Z" style="fill: #fff;"/>
+  <path d="M35.71,73.57h28.57c5.13,0,9.28-4.16,9.29-9.29v-28.57c0-5.13-4.16-9.28-9.29-9.29h-28.57c-5.13,0-9.28,4.16-9.29,9.29v28.57c0,5.13,4.16,9.28,9.29,9.29ZM65.19,31.15c1.97,0,3.57,1.6,3.57,3.57s-1.6,3.57-3.57,3.57-3.57-1.6-3.57-3.57,1.6-3.57,3.57-3.57ZM50,35.71c7.89,0,14.29,6.4,14.29,14.29s-6.4,14.29-14.29,14.29-14.29-6.4-14.29-14.29,6.4-14.29,14.29-14.29Z" style="fill: url(#Nueva_muestra_de_degradado_1);"/>
+  <path d="M50,59.29c5.13,0,9.29-4.16,9.29-9.29,0-5.13-4.16-9.28-9.29-9.29-5.13,0-9.29,4.16-9.29,9.29s4.16,9.29,9.29,9.29Z" style="fill: url(#Nueva_muestra_de_degradado_1-2);"/>
+  <path d="M50,100c27.61,0,50-22.39,50-50S77.61,0,50,0,0,22.39,0,50s22.39,50,50,50ZM21.43,35.71c0-7.89,6.4-14.29,14.29-14.29h28.57c7.89,0,14.29,6.4,14.29,14.29v28.57c0,7.89-6.4,14.29-14.29,14.29h-28.57c-7.89,0-14.29-6.4-14.29-14.29v-28.57Z" style="fill: url(#Nueva_muestra_de_degradado_1-3);"/>
+</svg>
