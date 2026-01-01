@@ -8,7 +8,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*Variables */
+:root {
+    --color-primary: #F9F9F9;
+    --color-secondary: #8C8C8C;
+    --color-accent: #8B0000;
+    --color-hover: #B59410;
+    --color-text: #1A1A1A;
+    --color-text-light: #666666;
+    --font-heading: 'Bodoni Moda', serif;
+    --font-body: 'Lato', sans-serif;
+    --transition: all 0.3s ease;
+}
 
+/* Estilos globales */
 body {
     background-color: #ffffff;
     color: #1a1a1a;
@@ -62,7 +75,7 @@ h1, h2, h3, .logo {
 }
 
 .nav-links a:hover {
-    color: #b59410; /* Color oro sugerido */
+    color: var(--color-hover); /* Color oro sugerido */
 }
 
 /* Hero Section */

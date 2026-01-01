@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Newsletter from '../components/Newsletter.astro';
 
 ---
 
@@ -17,7 +18,7 @@ import Layout from '../layouts/Layout.astro';
         </section>
         <section>
             <h2>El Curador</h2>
-            <img src="/curador.png" alt="John Vicente" style="width:200px; height:auto; float:left; margin-right:1rem; border-radius:50%;">
+            <img src="/curador.png" alt="John Vicent" style="width:200px; height:auto; float:left; margin-right:1rem; border-radius:50%;">
             <p>Con una visión moldeada por la vibrante herencia venezolana y la sofisticación del diseño español, John González Vicent entiende el arte como una búsqueda incesante de la trascendencia visual. Su trayectoria, profundamente arraigada en el universo del teatro, le ha dotado de una capacidad única para orquestar atmósferas donde la escenografía, la luz y el simbolismo convergen. Esta sensibilidad escénica se traduce en un diseño que no solo ocupa un espacio, sino que narra una historia, transformando cada trazo y cada color en una experiencia emocional que resuena con la precisión de una puesta en escena magistral.</p>
             <p>En el universo de AETERNA, su portafolio se despliega como una cuidada selección de proyectos donde la estética refinada y la funcionalidad estratégica coexisten en perfecto equilibrio. John fusiona la disciplina del diseño gráfico moderno con una perspectiva multicultural, buscando siempre esa "chispa de belleza" que convierte una marca o una campaña digital en una huella duradera. Su enfoque se centra en la creatividad con alma y el propósito claro, invitando a una colaboración donde lo clásico y lo contemporáneo se entrelazan para generar un valor diferenciador y una sensibilidad artística sin precedentes.</p>
         </section>
@@ -32,11 +33,7 @@ import Layout from '../layouts/Layout.astro';
 
         </section>
         <section>
-            <h2>Suscríbete a nuestra Newsletter</h2>
-            <form action="https://example.com/subscribe" method="post">
-                <label for="email">Correo Electrónico:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-                <input type="submit" value="Suscribirse">
+            <Newsletter />
         </section>
         <section>
             <h2>Estamos Ubicados en Zaragoza</h2>
