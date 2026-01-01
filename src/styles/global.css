@@ -146,25 +146,7 @@ h1, h2, h3, .logo {
     letter-spacing: 1px;
 }
 
-/* Footer */
-.footer {
-    padding: 4rem 5%;
-    text-align: center;
-    border-top: 1px solid #f0f0f0;
-    background: #fafafa;
-}
 
-.footer p {
-    letter-spacing: 5px;
-    margin-bottom: 1rem;
-}
-
-.footer-links a {
-    color: #888;
-    text-decoration: none;
-    font-size: 0.8rem;
-    margin: 0 0.5rem;
-}
 
 /* Responsivo */
 @media (max-width: 768px) {
