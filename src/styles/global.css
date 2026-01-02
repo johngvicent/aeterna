@@ -132,7 +132,7 @@ h1, h2, h3, .logo {
 }
 
 .card-image {
-    aspect-ratio: 4/5;
+    aspect-ratio: 1/1;
     max-height: 400px;
     background-size: cover;
     background-position: center;

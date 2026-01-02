@@ -1,0 +1,23 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Layout from '../layouts/Layout.astro'; // Tu layout principal
+
+// Filtramos la colección para traer solo lo que es "Prehistoria"
+const obrasPrehistoria = await getCollection('galeria', ({ data }: CollectionEntry<'galeria'>) => {
+    return data.epoca === 'Prehistoria';
+});
+---
+
+<Layout title="Prehistoria | AETERNA">
+    <main class="grid-container">
+    {obrasPrehistoria.map((obra: CollectionEntry<'galeria'>) => (
+        <a href={`/galeria/${obra.slug}`} class="card">
+            <div class="card-image" style={`background-image: url('${obra.data.image}');`}></div>
+            <div class="card-text">
+                <h3>{obra.data.title}</h3>
+                <span>{obra.data.epoca}</span>
+            </div>
+        </a>
+    ))}
+    </main>
+</Layout>
