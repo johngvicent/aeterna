@@ -15,16 +15,17 @@ const obrasPrehistoria = await getCollection('galeria', ({ data }: CollectionEnt
             <h2>La Prehistoria a través del arte</h2>
             <p>Descubre la esencia del arte prehistórico, donde cada trazo y escultura revelan el alma creativa de la humanidad ancestral.</p>
         </section>
-    <section class="grid-container">
-    {obrasPrehistoria.map((obra: CollectionEntry<'galeria'>) => (
-        <a href={`/galeria/${obra.slug}`} class="card">
-            <div class="card-image" style={`background-image: url('${obra.data.image}');`}></div>
-            <div class="card-text">
-                <h3>{obra.data.title}</h3>
-                <span>{obra.data.epoca}</span>
-            </div>
-        </a>
-    ))}
-    </section>
+        
+        <section class="grid-container">
+        {obrasPrehistoria.map((obra: CollectionEntry<'galeria'>) => (
+            <a href={`/galeria/${obra.slug}`} class="card">
+                <div class="card-image" style={`background-image: url('${obra.data.image}');`}></div>
+                <div class="card-text">
+                    <h3>{obra.data.title}</h3>
+                    <span>{obra.data.epoca}</span>
+                </div>
+            </a>
+        ))}
+        </section>
     </main>
 </Layout>
