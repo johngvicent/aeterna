@@ -2,44 +2,61 @@
 // Componente Newsletter reutilizable
 ---
 
-<article>
-    <div class="relative h-120! px-12! py-16! bg-[url(/boceto-contacto.jpg)] bg-cover bg-center flex flex-col justify-center items-center text-center text-white! overflow-hidden rounded-lg shadow-2xl before:content-[''] before:absolute before:inset-0 before:bg-black/40 before:z-0">
-        <h2 class="relative z-10 font-['bodoni moda'] text-white! text-5xl! font-bold! tracking-wide mb-4! drop-shadow-lg">
-            Suscríbete a nuestra newsletter
+<article class="w-full">
+    <div class="relative min-h-125 px-6! md:px-16! py-20! bg-[url(/boceto-contacto.jpg)] bg-cover bg-center flex flex-col justify-center items-center text-center overflow-hidden rounded-sm shadow-[0_10px_40px_rgba(0,0,0,0.15)]">
+        <!-- Overlay elegante -->
+        <div class="absolute inset-0 bg-linear-to-b from-black/50 via-black/40 to-black/60 z-0"></div>
+        
+        <!-- Decoración superior -->
+        <div class="relative z-10! mb-6!">
+            <span class="block w-12! h-px! bg-[#B59410] mx-auto mb-4"></span>
+            <span class="font-[Lato] text-xs uppercase tracking-[4px] text-white/70">Exclusivo</span>
+        </div>
+
+        <h2 class="relative z-10! font-[Bodoni_Moda] text-white! text-3xl! md:text-5xl! font-normal tracking-[3px] mb-6! drop-shadow-lg uppercase">
+            Newsletter
         </h2>
-        <p class="relative z-10 font-['Lato'] text-white! text-xl! font-semibold! tracking-wide! mb-8! max-w-2xl! drop-shadow-md">
-            Regístrate con tu correo electrónico y recibe actualizaciones y noticias directamente en tu bandeja de entrada.
+        
+        <p class="relative z-10! font-[Lato] text-white/90! font-bold! text-base! md:text-lg! tracking-wide mb-10! max-w-xl leading-relaxed">
+            Sé el primero en descubrir nuevas obras, artistas emergentes y eventos exclusivos de la galería.
         </p>
-        <form class="relative z-10 w-full max-w-2xl">
-            <div class="flex flex-col md:flex-row gap-4 mb-8!">
+
+        <form class="relative z-10! w-full max-w-lg">
+            <div class="flex flex-col gap-4 mb-6!">
                 <input 
                     type="email" 
                     placeholder="Tu correo electrónico" 
-                    class="flex-1 px-6 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-[#B78B1E] font-['Montserrat'] text-gray-800"
+                    class="w-full px-6! py-4! bg-white/95 border-0 rounded-sm focus:outline-none focus:ring-1 focus:ring-[#B59410] font-[Lato] text-[#1A1A1A] text-sm tracking-wide placeholder:text-[#8C8C8C] placeholder:uppercase placeholder:text-xs placeholder:tracking-[2px] transition-all duration-300"
                     required
                 />
                 <button 
                     type="submit" 
-                    class="bg-[#8B0000] hover:bg-[#B59410] text-white! font-['Lato'] font-bold! px-8 py-3 rounded-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg uppercase tracking-wider"
+                    class="w-full bg-[#8B0000] hover:bg-[#B59410] text-white font-[Lato] font-normal text-sm px-8! py-4! rounded-sm transition-all duration-300 ease-out hover:shadow-[0_8px_25px_rgba(181,148,16,0.3)] uppercase tracking-[3px]"
                 >
                     Suscribirse
                 </button>
             </div>
-            <div class="flex items-start gap-3 text-left">
+            
+            <div class="flex items-start gap-3! text-left">
                 <input 
                     type="checkbox" 
                     id="terminos" 
                     name="terminos" 
-                    class="w-5 h-5 mt-1 accent-[#B59410] cursor-pointer shrink-0"
+                    class="w-4 h-4 mt-0.5 accent-[#B59410] cursor-pointer shrink-0 rounded-sm"
                     required
                 />
                 <label 
                     for="terminos" 
-                    class="font-['Lato'] text-sm font-normal leading-relaxed cursor-pointer"
+                    class="font-[Lato] text-xs! text-white/70! font-light! leading-relaxed cursor-pointer hover:text-white/90 transition-colors duration-300"
                 >
-                    He leído y acepto la información básica sobre protección de datos así como el aviso legal, la política de privacidad y acepto el tratamiento de mis datos para realizar la solicitud realizada.
+                    Acepto la política de privacidad y el tratamiento de mis datos personales.
                 </label>
             </div>
         </form>
+
+        <!-- Decoración inferior -->
+        <div class="relative z-10! mt-10!">
+            <span class="block w-12! h-px! bg-[#B59410] mx-auto"></span>
+        </div>
     </div>
 </article>

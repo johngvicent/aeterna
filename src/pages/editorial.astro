@@ -10,34 +10,333 @@ import Newsletter from '../components/Newsletter.astro';
         <section>
             <h2>El Manifiesto</h2>
             <h3>La Línea Infinita</h3>
-            <h4>De la Piedra al Bit</h4>
+            <h4>AETERNA: El hilo que une el pigmento y el código</h4>
             <p>En esta galería, creemos que el arte no reside en el soporte, sino en la voluntad humana de trascender. No existe una ruptura real entre el pigmento de ocre sobre la roca de Altamira y el código binario grabado en una blockchain; ambos son el mismo grito del espíritu buscando permanencia en el flujo del tiempo.</p>
             <p>I. El Valor de la Huella Desde las manos pintadas en negativo en la prehistoria hasta las firmas criptográficas de hoy, el artista siempre ha buscado validar su existencia. Entendemos los NFT no como una simple mercancía, sino como la tecnología de la autenticidad, una herramienta que devuelve la soberanía al creador en un mundo de copias infinitas.</p>
             <p>II. La Belleza de lo Inmaterial Reivindicamos el píxel con la misma devoción que el mármol. El arte digital no es una simulación de la realidad, sino una nueva dimensión de la misma. En nuestra galería, la luz de una pantalla se trata con el mismo respeto curatorial que la luz que baña una catedral gótica: es energía convertida en significado.</p>
             <p>III. Un Diálogo Transhistórico Nuestra misión es borrar las fronteras cronológicas. Al colocar un retrato romano junto a un avatar generativo, no buscamos el contraste, sino el espejo. Ambos hablan de la identidad, del estatus y de la mirada del otro. En este espacio, el tiempo es una galería circular donde el pasado y el futuro se encuentran para conversar.</p>
         </section>
+
         <section>
             <h2>El Curador</h2>
             <img src="/curador.png" alt="John Vicent" style="width:200px; height:auto; float:left; margin-right:1rem; border-radius:50%;">
             <p>Con una visión moldeada por la vibrante herencia venezolana y la sofisticación del diseño español, John González Vicent entiende el arte como una búsqueda incesante de la trascendencia visual. Su trayectoria, profundamente arraigada en el universo del teatro, le ha dotado de una capacidad única para orquestar atmósferas donde la escenografía, la luz y el simbolismo convergen. Esta sensibilidad escénica se traduce en un diseño que no solo ocupa un espacio, sino que narra una historia, transformando cada trazo y cada color en una experiencia emocional que resuena con la precisión de una puesta en escena magistral.</p>
             <p>En el universo de AETERNA, su portafolio se despliega como una cuidada selección de proyectos donde la estética refinada y la funcionalidad estratégica coexisten en perfecto equilibrio. John fusiona la disciplina del diseño gráfico moderno con una perspectiva multicultural, buscando siempre esa "chispa de belleza" que convierte una marca o una campaña digital en una huella duradera. Su enfoque se centra en la creatividad con alma y el propósito claro, invitando a una colaboración donde lo clásico y lo contemporáneo se entrelazan para generar un valor diferenciador y una sensibilidad artística sin precedentes.</p>
         </section>
-        <section>
+
+        <section class="contact-banner">
             <h2>Atelier / Contacto</h2>
             <p>Para consultas, colaboraciones o simplemente para compartir tu visión del arte y la trascendencia, no dudes en contactarnos en: </p>
-            <img src="/instagram-icon.svg" alt="Instagram">
-            <img src="/linkedin-icon.svg" alt="LinkedIn">
-            <img src="/github-icon.svg" alt="GitHub">
-            <img src="/web-icon.svg" alt="Web">
-
-
+            <a href="https://www.instagram.com/johngvicent/" target="_blank"><img src="/instagram-icon.svg" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/johngonzalezvicent/" target="_blank"><img src="/linkedin-icon.svg" alt="LinkedIn"></a>
+            <a href="https://github.com/johngvicent" target="_blank"><img src="/github-icon.svg" alt="GitHub"></a>
+            <a href="https://johnvicent.es" target="_blank"><img src="/web-icon.svg" alt="Web"></a>
         </section>
-        <section>
+        <section class="newsletter-section">
             <Newsletter />
         </section>
-        <section>
+
+        <section class="location-section">
             <h2>Estamos Ubicados en Zaragoza</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2980.839896899186!2d-0.8949048235495703!3d41.659201079090444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5914b8c006ea5f%3A0x9c58b173b3463da5!2sPl.%20de%20Europa%2C%2050003%20Zaragoza!5e0!3m2!1ses!2ses!4v1767269833966!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2980.839896899186!2d-0.8949048235495703!3d41.659201079090444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5914b8c006ea5f%3A0x9c58b173b3463da5!2sPl.%20de%20Europa%2C%2050003%20Zaragoza!5e0!3m2!1ses!2ses!4v1767269833966!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
     </main>
 </Layout>
+
+<style>
+    /* Editorial Page Styles - Chic & Elegant */
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 4rem 5%;
+    }
+
+    .hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+    }
+
+    /* Section Styles */
+    section {
+        margin-bottom: 5rem;
+        padding-bottom: 4rem;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    section:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+
+    /* Headings */
+    h2 {
+        font-family: 'Bodoni Moda', serif;
+        font-size: 2.5rem;
+        font-weight: 400;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: var(--color-text);
+        margin-bottom: 2rem;
+        text-align: center;
+        position: relative;
+    }
+
+    h2::after {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 1px;
+        background: var(--color-accent);
+        margin: 1rem auto 0;
+    }
+
+    h3 {
+        font-family: 'Bodoni Moda', serif;
+        font-size: 1.8rem;
+        font-weight: 400;
+        font-style: italic;
+        color: var(--color-text);
+        margin-bottom: 1rem;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+
+    h4 {
+        font-family: 'Lato', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: var(--color-text);
+        margin-bottom: 2.5rem;
+        text-align: center;
+    }
+
+    /* Paragraphs */
+    p {
+        font-family: 'Lato', sans-serif;
+        font-size: 1.05rem;
+        line-height: 1.9;
+        color: var(--color-text-light);
+        margin-bottom: 1.5rem;
+        text-align: justify;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Curador Section */
+    section:nth-of-type(2) {
+        background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
+        padding: 4rem;
+        border-radius: 2px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+    }
+
+    section:nth-of-type(2) img {
+        width: 220px !important;
+        height: 220px !important;
+        object-fit: cover;
+        border-radius: 50%;
+        float: left;
+        margin-right: 2.5rem !important;
+        margin-bottom: 1rem;
+        border: 3px solid #f0f0f0;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+
+    section:nth-of-type(2) img:hover {
+        transform: scale(1.02);
+        box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+    }
+
+    section:nth-of-type(2) p {
+        text-align: left;
+        max-width: none;
+    }
+
+    section:nth-of-type(2)::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    /* Contact Banner */
+    .contact-banner {
+        background: linear-gradient(135deg, var(--color-text) 0%, #2a2a2a 100%);
+        color: #fff;
+        padding: 4rem;
+        text-align: center;
+        border-radius: 2px;
+    }
+
+    .contact-banner h2 {
+        color: #fff;
+    }
+
+    .contact-banner h2::after {
+        background: var(--color-hover);
+    }
+
+    .contact-banner p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .contact-banner a {
+        display: inline-block;
+        margin: 0 1rem;
+        transition: var(--transition);
+    }
+
+    .contact-banner a img {
+        width: 40px;
+        height: 40px;
+        filter: brightness(0) invert(1);
+        opacity: 0.7;
+        transition: var(--transition);
+    }
+
+    .contact-banner a:hover img {
+        opacity: 1;
+        transform: translateY(-5px);
+        filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(10deg);
+    }
+
+    /* Newsletter Section */
+    .newsletter-section {
+        background: #fafafa;
+        padding: 4rem;
+        text-align: center;
+        border-radius: 2px;
+    }
+
+    /* Location Section */
+    .location-section {
+        text-align: center;
+    }
+
+    .map-container {
+        position: relative;
+        overflow: hidden;
+        border-radius: 2px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .map-container iframe {
+        width: 100%;
+        height: 450px;
+        display: block;
+    }
+
+    /* Decorative Elements */
+    section:first-of-type {
+        position: relative;
+    }
+
+    section:first-of-type::before {
+        content: '"';
+        font-family: 'Bodoni Moda', serif;
+        font-size: 8rem;
+        color: #f5f5f5;
+        position: absolute;
+        top: -2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+        line-height: 1;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        main {
+            padding: 2rem 5%;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+        }
+
+        section:nth-of-type(2) {
+            padding: 2rem;
+        }
+
+        section:nth-of-type(2) img {
+            float: none !important;
+            display: block;
+            margin: 0 auto 2rem auto !important;
+        }
+
+        section:nth-of-type(2) p {
+            text-align: justify;
+        }
+
+        .contact-banner {
+            padding: 2rem;
+        }
+
+        .contact-banner a {
+            margin: 0 0.5rem;
+        }
+
+        .contact-banner a img {
+            width: 32px;
+            height: 32px;
+        }
+
+        .newsletter-section {
+            padding: 2rem;
+        }
+
+        .map-container iframe {
+            height: 300px;
+        }
+    }
+
+    /* Elegant Animations */
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    section {
+        animation: fadeInUp 0.8s ease forwards;
+    }
+
+    section:nth-of-type(2) {
+        animation-delay: 0.2s;
+    }
+
+    section:nth-of-type(3) {
+        animation-delay: 0.4s;
+    }
+
+    section:nth-of-type(4) {
+        animation-delay: 0.6s;
+    }
+
+    section:nth-of-type(5) {
+        animation-delay: 0.8s;
+    }
+</style>
