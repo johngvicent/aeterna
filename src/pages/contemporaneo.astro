@@ -2,15 +2,15 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import Layout from '../layouts/Layout.astro'; // Tu layout principal
 
-// Filtramos la colección para traer solo lo que es "Clásico"
-const obrasClasico = await getCollection('galeria', ({ data }: CollectionEntry<'galeria'>) => {
-    return data.epoca === 'Clásico';
+// Filtramos la colección para traer solo lo que es "Contemporáneo"
+const obrasContemporaneo = await getCollection('galeria', ({ data }: CollectionEntry<'galeria'>) => {
+    return data.epoca === 'Contemporáneo';
 });
 ---
 
-<Layout title="Clásico | AETERNA">
+<Layout title="Contemporáneo | AETERNA">
     <main class="grid-container">
-    {obrasClasico.map((obra: CollectionEntry<'galeria'>) => (
+    {obrasContemporaneo.map((obra: CollectionEntry<'galeria'>) => (
         <a href={`/galeria/${obra.slug}`} class="card">
             <div class="card-image" style={`background-image: url('${obra.data.image}');`}></div>
             <div class="card-text">
