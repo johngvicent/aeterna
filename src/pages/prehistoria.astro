@@ -12,10 +12,10 @@ const obrasPrehistoria = await getCollection('galeria', ({ data }: CollectionEnt
     <main>
         <section>
             <h1 class="hidden">Prehistoria</h1>
-            <h2>La Prehistoria a través del arte</h2>
+            <h2>La Prehistoria a Través del Arte</h2>
             <p>Descubre la esencia del arte prehistórico, donde cada trazo y escultura revelan el alma creativa de la humanidad ancestral.</p>
         </section>
-        
+
         <section class="grid-container">
         {obrasPrehistoria.map((obra: CollectionEntry<'galeria'>) => (
             <a href={`/galeria/${obra.slug}`} class="card">
